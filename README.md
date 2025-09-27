@@ -42,7 +42,7 @@ BlogVerse, modern web teknolojileri kullanılarak geliştirilmiş, kullanıcı d
 *Hakkımızda ve İletişim sayfaları*
 
 ### Profil Yönetimi
-![Profil Düzenleme](images/profilidüzenle.png)
+![Profil Düzenleme](images/profilidğzenle.png)
 *Kullanıcı profil düzenleme ve ayarlar*
 
 ## ✨ Özellikler
