@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f0fdfa;
+  --foreground: #115e59;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f0fdfa;
+    --foreground: #115e59;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Form elements - beyaz üzerine beyaz sorunu için */
+input, textarea, select {
+  background-color: white !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #14b8a6 !important;
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.2) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Button styling */
+button {
+  color: inherit;
+}
+
+/* Blog content styling */
+.prose {
+  color: #374151 !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: #115e59 !important;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #374151 !important;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #1f2937 !important;
+}
+
+/* Text colors - important overrides */
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+/* White backgrounds */
+.bg-white {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+/* Card styling */
+.bg-white .text-gray-800,
+.bg-white h1,
+.bg-white h2, 
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6 {
+  color: #1f2937 !important;
+}
+
+.bg-white .text-gray-600,
+.bg-white p {
+  color: #4b5563 !important;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
